@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo0ser</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+      * {
+          margin:0;
+          font-family: Arial;
+          border: border-box;
+      }
+
+
+.id {
+    font-size: 30px;
+}
+.about{
+  height: 400px;
+}
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:450px){
+  .content{
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<body>
+    
+    <div class="whole">
+      <div class="name">
+        <div class="logo">
+        </div>
+        <div class="icon">
+
+          <div class="cart">
+            <a class="ext" href="user.html"><i class="fa-solid fa-user" ></i></a>
+          </div>
+
+          <div class="cart">
+            <a class="ext" href="noti.html"><i class="fa-solid fa-bell" ></i></a>
+          </div>
+
+          <div id="menu-button" onclick="openCloseMenu()">&#9776;</div>
+
+          <div id="menu-bar">
+            <a href="javascript:void(0)" class="closebtn" onclick="openCloseMenu()">&times;</a>
+            <a href="main.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="space"></div>
+      <div class="about">
+        <div class="content">
+          <span onclick="openWhatsApp()"><i class="fa-solid fa-address-book id content"></i>WhatsApp</span>
+          <span onclick="openInstagram()"><i class="fa-brands fa-instagram id content"></i>instagram</span>
+          <span onclick="openMail()"><i class="fa-solid fa-envelope id content"></i>Email</span>
+        </div>
+      </div>
+      <span class="copyright">
+        Copyright 2024 - lo0ser.netlify.app
+      </span>
+
+    </div>
+    
+
+
+
+
+
+<script>
+  function openCloseMenu() {
+    var menuBar = document.getElementById('menu-bar');
+    var content = document.getElementById('content');
+
+    if (menuBar.style.width === '250px') {
+      menuBar.style.width = '0';
+      content.style.marginLeft = '0';
+    } else {
+      menuBar.style.width = '250px';
+      content.style.marginLeft = '250px';
+    }
+  }
+</script>
+<script>
+  function openWhatsApp() {
+      var phoneNumber = '7008544921';
+      var whatsappUrl = `https://wa.me/${phoneNumber}`;
+      window.open(whatsappUrl, '_blank');
+  }
+
+  function openInstagram() {
+      var instagramUrl = 'https://www.instagram.com/priyansh.agrawal?utm_source=qr'; // Replace with your Instagram profile URL
+      window.open(instagramUrl, '_blank');
+  }
+
+  function openMail() {
+      var emailAddress = 'gunutig123@gmail.com'; // Replace with your email address
+      window.open(emailAddress, '_blank');
+  }
+</script>
+
+</body>
+</html>

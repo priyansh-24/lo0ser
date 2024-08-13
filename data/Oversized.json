@@ -1,0 +1,50 @@
+[
+    {
+        "id": 54,
+        "name":" Oversized T-Shirt",
+        "price": 399,
+        "image": "img/54.png"
+    },
+    {
+        "id": 55,
+        "name":"Oversized T-Shirt",
+        "price": 449,
+        "image": "img/55.png"
+    },
+    {
+        "id": 56,
+        "name":"Oversized T-Shirt",
+        "price": 449,
+        "image": "img/56.png"
+    },
+    {
+        "id": 57,
+        "name":"Oversized T-Shirt",
+        "price": 499,
+        "image": "img/57.png"
+    },
+    {
+        "id": 58,
+        "name":"Oversized T-Shirt",
+        "price": 499,
+        "image": "img/58.png"
+    },
+    {
+        "id": 59,
+        "name":"Oversized T-Shirt",
+        "price": 449,
+        "image": "img/59.png"
+    },
+    {
+        "id": 60,
+        "name":"Oversized T-Shirt",
+        "price": 549,
+        "image": "img/60.png"
+    },
+    {
+        "id": 61,
+        "name":"Oversized T-Shirt",
+        "price": 499,
+        "image": "img/61.png"
+    }
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo0ser</title>
+    <link href="styl.css" rel="stylesheet">
+    <style>
+        html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('img/Untitled design (2).png');
+            background-size: contain;
+        }
+
+        .logow img {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+            animation: flicker 0.15s infinite; /* Flicker between BW and color */
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                filter: none; /* Full color */
+            }
+            50% {
+                filter: grayscale(100%); /* Black and white */
+            }
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<body>
+    <div class="logow">
+        <img src="img/Image (9).png" alt="Logo"> <!-- Replace with your logo path -->
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = 'main.html';
+        }, 2200); // Redirect after 3 seconds
+    </script>
+</body>
+</html>

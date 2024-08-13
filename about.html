@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo0ser</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">   
+    <style>
+      
+        .about{
+          height: 350px;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            color: rgb(0, 0, 0);
+        }
+@media screen and (max-width:800px) {
+.about{
+    font-size: 20px;
+}
+}
+        
+@media screen and (max-width:450px) {
+.about{
+    font-size: 15px;
+}
+}
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<body>
+    <div class="whole">
+        <div class="name">
+          <div class="logo">
+          </div>
+          <div class="icon">
+  
+            <div class="cart">
+              <a class="ext" href="user.html"><i class="fa-solid fa-user" ></i></a>
+            </div>
+  
+            <div class="cart">
+              <a class="ext" href="noti.html"><i class="fa-solid fa-bell" ></i></a>
+            </div>
+  
+            <div id="menu-button" onclick="openCloseMenu()">&#9776;</div>
+    <div id="menu-bar">
+      <a href="javascript:void(0)" class="closebtn" onclick="openCloseMenu()">&times;</a>
+      <a href="main.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+          </div>
+  
+        </div>
+        <div class="space"></div>
+        <div class="about">
+            <h2>Lo0ser</h2>
+            <p> 
+              
+              
+              Welcome to Lo0ser,  
+               where style meets comfort and innovation! 
+               This start up is Founded by priyansh agrawal- A student of NITR ,
+               Founded on the belief that fashion should be accessible yet unique,
+                we strive to offer a curated collection that speaks to individuals
+                 who value quality and trend-setting designs.
+            </p>
+        </div>
+        
+       
+    
+    
+      
+    
+      <script>
+        function openCloseMenu() {
+          var menuBar = document.getElementById('menu-bar');
+          var content = document.getElementById('content');
+    
+          if (menuBar.style.width === '250px') {
+            menuBar.style.width = '0';
+            content.style.marginLeft = '0';
+          } else {
+            menuBar.style.width = '250px';
+            content.style.marginLeft = '250px';
+          }
+        }
+      </script>
+</body>
+</html>

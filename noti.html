@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo0ser</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        *{
+            background-image:linear-gradient(to right ,rgb(236, 237, 172),rgb(222, 222, 220));
+  
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .hom{
+            text-decoration: none;
+            color: #3d3d3d;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<body>
+    <div class="top">
+        <div >
+            <a href="main.html" class="hom">Notifications</a>
+          </div>
+          <div class="EMOJI">
+          </div>
+    </div>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .notification {
+            border: 2px solid #3f3f3f;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 4px;
+        }
+        .notification-timestamp {
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+
+<div id="notifications"></div>
+
+<script>
+    async function fetchNotifications() {
+        try {
+            const response = await fetch('notifications.json');
+            const notifications = await response.json();
+            displayNotifications(notifications);
+        } catch (error) {
+            console.error('Error fetching notifications:', error);
+        }
+    }
+
+    function displayNotifications(notifications) {
+        const notificationsContainer = document.getElementById('notifications');
+        notificationsContainer.innerHTML = '';
+        notifications.forEach(notification => {
+            const notificationElement = document.createElement('div');
+            notificationElement.className = 'notification';
+            notificationElement.innerHTML = `
+                <p>${notification.message}</p>
+                <div class="notification-timestamp">${new Date(notification.timestamp).toLocaleString()}</div>
+            `;
+            notificationsContainer.appendChild(notificationElement);
+        });
+    }
+
+    // Fetch and display notifications on page load
+    fetchNotifications();
+</script>
+
+</body>
+</html>

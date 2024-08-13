@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo0ser</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+        
+      
+          function sendToWhatsApp(event) {
+              event.preventDefault(); // Prevent form from submitting normally
+      
+              var phoneNumber = '7008544921';
+              var name = document.getElementById('name').value;
+              var userPhoneNumber = document.getElementById('userPhoneNumber').value;
+              var email = document.getElementById('email').value;
+              
+              var message = `Name: ${name}\nPhone Number: ${userPhoneNumber}\nEmail: ${email}`;
+              
+              var encodedMessage = encodeURIComponent(message);
+              var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      
+              window.open(whatsappUrl, '_blank');
+          }
+      </script>
+    <style>
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 360px;
+            max-width: 100%;
+            margin: 2px auto;
+            padding-top: 50px;
+            background-color: rgb(173, 167, 124);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        input{
+            background-color: rgb(237, 237, 237);;
+            width: 40%;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        .top{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .hom{
+            text-decoration: none;
+            color: #3d3d3d;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<body>
+    <div class="top">
+        <div >
+            <a href="main.html" class="hom">Home</a>
+          </div>
+          <div class="EMOJI">
+          </div>
+    </div>
+    <div class="login-form">
+        <form id="loginForm" onsubmit="sendLoginInfo(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="userPhoneNumber">Phone Number:</label><br>
+            <input type="text" id="userPhoneNumber" name="userPhoneNumber" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <script>
+        function sendLoginInfo(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+    
+            const phoneNumber = '7008544921';
+            const name = document.getElementById('name').value;
+            const userPhoneNumber = document.getElementById('userPhoneNumber').value;
+            const email = document.getElementById('email').value;
+    
+            const message = `Login Attempt:\nName: ${name}\nPhone Number: ${userPhoneNumber}\nEmail: ${email}`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+    
+    
+</body>
+</html>

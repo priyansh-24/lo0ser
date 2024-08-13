@@ -1,0 +1,69 @@
+[
+    {
+        "id": 50,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/50.png"
+    },
+    {
+        "id": 49,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/49.png"
+    },
+    {
+        "id":48,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/48.png"
+    },
+    {
+        "id": 1,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/1.png"
+    },
+    {
+        "id": 3,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/3.png"
+    },
+    {
+        "id": 4,
+        "name":" Pre-designed T-Shirt",
+        "price": 449,
+        "image": "img/4.png"
+    },
+    {
+        "id": 5,
+        "name":" Pre-designed T-Shirt",
+        "price": 449,
+        "image": "img/5.png"
+    },
+    {
+        "id": 6,
+        "name":"Pre-designed T-Shirt",
+        "price": 399,
+        "image": "img/6.png"
+    },
+    {
+        "id": 7,
+        "name":" Pre-designed T-Shirt",
+        "price": 599,
+        "image": "img/7.png"
+    },
+    {
+        "id": 45,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/45.png"
+    },
+    {
+        "id": 46,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/46.png"
+    }
+
+]

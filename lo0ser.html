@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lo0ser</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="style.css" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #orderForm {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #ccc;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    #menu-bar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    #menu-bar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    #menu-bar a:hover {
+      color: #f1f1f1;
+    }
+    #menu-button {
+      font-weight: 200;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 2;
+      position: fixed;
+      top: 32px;
+      left: 150px;
+    }
+    .whole {
+      background-color: #000;
+      padding-bottom: 30px;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-radius: 10px;
+      width: 96%;
+      margin-bottom: 20px;
+      padding: 25px;
+      background-color: rgb(217, 217, 148);
+    }
+    .container {
+      width: 85%;
+      margin: auto;
+      text-align: center;
+      padding-top: 10px;
+      transition: transform 0.5s;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+    .title {
+      font-size: xx-large;
+    }
+    .listProduct .item img {
+      border-radius: 10px;
+      width: 100%;
+    }
+    .listProduct {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .listProduct .item {
+      background-image: linear-gradient(to left, rgb(241, 242, 192), rgb(80, 77, 77));
+      padding: 5px;
+      border-radius: 15px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .listProduct .item:hover {
+      background-image: linear-gradient(to right, rgb(208, 199, 199), rgb(231, 223, 129));
+      transform: scale(1.03);
+    }
+    .listProduct .item h2 {
+      color: rgb(0, 0, 0);
+      font-weight: 50;
+      font-size: 15px;
+    }
+    .listProduct .item .price {
+      color: #ffffff;
+      letter-spacing: 2px;
+      font-size: small;
+    }
+    .listProduct .item button {
+      background-color: #4e4f69;
+      color: #eee;
+      border: none;
+      padding: 5px 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+    
+    
+    @media only screen and (max-width: 992px) {
+      #menu-button {
+        top: 35px;
+        left: 1000px;
+      }
+      .head {
+        width: 90%;
+      }
+      .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      #menu-button {
+        top: 35px;
+        left: 70px;
+      }
+      .head {
+        width: 87%;
+      }
+      .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media only screen and (max-width: 450px) {
+      #menu-button {
+        top: 35px;
+        left: 35px;
+      }
+      .head {
+        width: 82%;
+      }
+      .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .tabs {
+      display:flex;
+      overflow-x:scroll;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .tab {   
+      margin: 2px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 5px 5px 0 0;
+      background-color: #f9fedc;
+      flex: 1;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .tab.active {
+      background: #cbecf0;
+    }
+    .product-section {
+      display: none;
+    }
+    .product-section.active {
+      display: block;
+    }
+  </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<body>
+  <div id="overlay" onclick="closeForm()"></div>
+  <div id="orderForm">
+    <span class="close-btn" onclick="closeForm()">×</span>
+    <h3>Complete Your Order</h3>
+    <form onsubmit="sendToWhatsApp(event)">
+      <input type="hidden" id="orderItem" name="orderItem">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="hall">Hall name:</label><br>
+      <input type="text" id="hall" name="hall" required><br><br>
+      <label for="room">Room no:</label><br>
+      <input type="text" id="room" name="room"><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="userPhoneNumber">Phone Number:</label><br>
+      <input type="text" id="userPhoneNumber" name="userPhoneNumber" required><br><br>
+      <label for="rollNumber">Roll Number:</label><br>
+      <input type="text" id="rollNumber" name="rollNumber" required><br><br>
+      <label for="needText">Do you want to add some text on your T-shirt ?</label><br>
+      <select id="needText" name="needText" onchange="showTextArea()">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+      <textarea id="text" name="text" placeholder="Enter your text (optional)"></textarea><br><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="whole">
+    <div class="container">
+      <header class="head">
+        <div id="menu-button" onclick="openCloseMenu()">&#9776;</div>
+        <div id="menu-bar">
+          <a href="javascript:void(0)" class="closebtn" onclick="openCloseMenu()">&times;</a>
+          <a href="main.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <img src="img/best.png" height="50px">
+      </header>
+      <div class="tabs">
+        <div class="tab active" data-tab="casual" onclick="switchTab('casual')">Casual</div>
+        <div class="tab" data-tab="oversized" onclick="switchTab('oversized')">Oversized</div>
+        <div class="tab" data-tab="acidWashed" onclick="switchTab('acidWashed')">Acid Washed</div>
+        <div class="tab" data-tab="varsityJacket" onclick="switchTab('varsityJacket')">Varsity Jacket</div>
+        <div class="tab" data-tab="hoodie" onclick="switchTab('hoodie')">Hoodie</div>
+        <div class="tab" data-tab="polo" onclick="switchTab('polo')">Polo</div>
+        <div class="tab" data-tab="sweatshirt" onclick="switchTab('sweatshirt')">Sweat Shirt</div>
+    </div>
+
+    
+      <div id="casual" class="product-section active listProduct"></div>
+      <div id="oversized" class="product-section listProduct"></div>
+      <div id="acidWashed" class="product-section listProduct"></div>
+      <div id="hoodie" class="product-section listProduct"></div>
+      <div id="polo" class="product-section listProduct"></div>
+      <div id="sweatshirt" class="product-section listProduct"></div>
+      <div id="varsityJacket" class="product-section listProduct"></div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

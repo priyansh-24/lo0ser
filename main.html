@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo0ser</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+    <script src="script.js"></script>  
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLTXQ1NQNV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VLTXQ1NQNV');
+</script>
+<script>
+  function sendWhatsAppMessage() {
+    var phoneNumber = '7008544921'; // Your phone number
+    var message = 'Hey, i want to custumize a tshirt from your website'; // Your message
+    var url = 'https://api.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+
+    // Open the URL in a new tab
+    window.open(url, '_blank');
+  }
+</script>
+<body>
+      <div class="whole">
+      <div class="name">
+        
+        <div class="logo">
+        </div>
+        <div class="icon">
+
+          <div class="cart">
+            <a class="ext" href="user.html"><i class="fa-solid fa-user" ></i></a>
+          </div>
+
+          <div class="cart">
+            <a class="ext" href="noti.html"><i class="fa-solid fa-bell" ></i></a>
+          </div>
+          
+
+
+          <div id="menu-button" onclick="openCloseMenu()">&#9776;</div>
+  <div id="menu-bar">
+    <a href="javascript:void(0)" class="closebtn" onclick="openCloseMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+        </div>
+
+      </div>
+      
+    
+    <script src="cart.js"></script>
+      <div class="space"></div>
+
+
+      <div class="slider">
+        <div class="slides">
+          <div class="img">
+            for custumizing your own Design
+            <div class="click" onclick="sendWhatsAppMessage()">Click Here</div>
+          </div>
+        </div>
+    </div>
+
+
+
+    
+
+  <div class="main">
+    <div class="about">
+      <div class="content">
+          <a class="head" href="lo0ser.html">Lo0ser</a>
+      </div>
+      <div class="img3"></div>
+    </div>
+  
+    <div class="about">
+      <div class="img2"></div>
+      <div class="content">
+          <a class="head" href="print.html">NITR Design</a>
+          <a class="note">(<span class="red">Note :-</span>You can print you name here)</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section class="services">
+
+    <div class="services-box">
+        <i class="fas fa-shipping-fast"></i>
+        <span>Free Shipping</span>
+        <p>Free Shipping for all NITR order</p>
+    </div>
+
+    <div class="services-box">
+        <i class="fas fa-headphones-alt"></i>
+        <span>Support 24/7</span>
+        <p>We support 24h a day</p>
+    </div>
+    
+    <div class="services-box">
+        <i class="fas fa-sync"></i>
+        <span>100% Quality</span>
+        <p>Quality guaranted</p>
+    </div>
+    
+</section>
+
+
+
+<footer>
+  <div class="footer-content">
+      <img src="img/bestw.png" class="logo" alt="">
+      <div class="footer-ul-container">
+          <ul class="category">
+              <li><a href="#" class="footer-link">t-shirts</a></li>
+              <li><a href="#" class="footer-link">over Sized</a></li>
+              <li><a href="#" class="footer-link">sweat shirts</a></li>
+              <li><a href="#" class="footer-link">acid washed</a></li>
+              <li><a href="#" class="footer-link">hodies</a></li>
+              <li><a href="#" class="footer-link">shirts</a></li>
+          </ul>
+      </div>
+  </div>
+
+    <span class="copyright">
+        Copyright 2024 - lo0ser.netlify.app
+    </span>
+
+    
+</footer>
+    </div>
+
+
+
+  
+
+  <script>
+    function openCloseMenu() {
+      var menuBar = document.getElementById('menu-bar');
+      var content = document.getElementById('content');
+
+      if (menuBar.style.width === '150px') {
+        menuBar.style.width = '0';
+        content.style.marginLeft = '0';
+      } else {
+        menuBar.style.width = '150px';
+        content.style.marginLeft = '150px';
+      }
+    }
+
+  </script>
+
+</body>
+
+  <style>
+    body{
+  margin: 0;
+  font-family: Poppins;
+}
+.container{
+  width: 900px;
+  margin: auto;
+  max-width: 90vw;
+  text-align: center;
+  padding-top: 10px;
+  transition: transform .5s;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.icon-cart{
+  position: relative;
+}
+.title{
+  font-size: xx-large;
+}
+.listProduct .item img{
+  width: 90%;
+  filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.listProduct .item{
+  background-color: #EEEEE6;
+  padding: 20px;
+  border-radius: 20px;
+}
+.listProduct .item h2{
+  font-weight: 500;
+  font-size: large;
+}
+.listProduct .item .price{
+  letter-spacing: 7px;
+  font-size: small;
+}
+.listProduct .item button{
+  background-color: #353432;
+  color: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+/* cart */
+.cartTab{
+  width: 400px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: .5s;
+}
+body.showCart .cartTab{
+  right: 0;
+}
+body.showCart .container{
+  transform: translateX(-250px);
+}
+.cartTab h1{
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+.cartTab .btn{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+  background-color: #E8BC0E;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+.cartTab .close{
+  background-color: #eee;
+}
+.listCart .item img{
+  width: 100%;
+}
+.listCart .item{
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+.listCart .quantity span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  color: #555;
+  cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+  background-color: transparent;
+  color: #eee;
+  cursor: auto;
+}
+.listCart .item:nth-child(even){
+  background-color: #eee1;
+}
+.listCart{
+  overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+  width: 0;
+}
+@media only screen and (max-width: 992px) {
+  .listProduct{
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+  .listProduct{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+  </style>

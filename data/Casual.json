@@ -1,0 +1,240 @@
+[
+    {
+        "id": 51,
+        "name":" Slim Fit T-Shirt",
+        "price": 399,
+        "image": "img/51.png"
+    },
+    {
+        "id": 52,
+        "name":" Slim Fit T-Shirt",
+        "price": 399,
+        "image": "img/52.png"
+    },
+    {
+        "id": 44,
+        "name":" Slim Fit T-Shirt",
+        "price": 399,
+        "image": "img/44.png"
+    },
+    {
+        "id": 53,
+        "name":" Slim Fit T-Shirt",
+        "price": 399,
+        "image": "img/53.png"
+    },
+    {
+        "id": 43,
+        "name":" Slim Fit T-Shirt",
+        "price": 299,
+        "image": "img/43.png"
+    },
+    
+    {
+        "id": 62,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/62.png"
+    },
+    {
+        "id": 63,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/63.png"
+    },
+    {
+        "id": 11,
+        "name":"Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/11.png" 
+    },
+    {
+        "id":12,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/12.png"
+    },
+    {
+        "id": 13,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/13.png"
+    },
+    {
+        "id": 14,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/14.png"
+    },
+    {
+        "id": 15,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/15.png"
+    },
+    {
+        "id": 16,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/16.png"
+    },
+    {
+        "id": 17,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/17.png"
+    },
+    {
+        "id": 18,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/18.png"
+    },
+    {
+        "id": 19,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/19.png"
+    },
+    {
+        "id": 20,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/20.png"
+    },
+    {
+        "id": 21,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/21.png"
+    },
+    {
+        "id": 22,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/22.png"
+    },
+    {
+        "id": 23,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/23.png"
+    },
+    {
+        "id": 24,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/24.png"
+    },
+    {
+        "id": 25,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/25.png"
+    },
+    {
+        "id": 26,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/26.png"
+    },
+    {
+        "id": 27,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/27.png"
+    },
+    {
+        "id": 28,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/28.png"
+    },
+    {
+        "id": 29,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/29.png"
+    },
+    {
+        "id": 30,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/30.png"
+    },
+    {
+        "id": 31,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/31.png"
+    },
+    {
+        "id": 32,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/32.png"
+    },
+    {
+        "id": 33,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/33.png"
+    },
+    {
+        "id": 34,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/34.png"
+    },
+    {
+        "id": 35,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/35.png"
+    },
+    {
+        "id": 9,
+        "name":"Pre-designed T-Shirt",
+        "price": 249,
+        "image": "img/9.png"
+    },
+    {
+        "id": 36,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/36.png"
+    },
+    
+    {
+        "id": 38,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/38.png"
+    },
+    
+    {
+        "id": 40,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/40.png"
+    },
+    {
+        "id": 41,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/41.png"
+    },
+    {
+        "id": 37,
+        "name":" Pre-designed T-Shirt",
+        "price": 349,
+        "image": "img/37.png"
+    },
+    {
+        "id": 10,
+        "name":"Pre-designed T-Shirt",
+        "price": 299,
+        "image": "img/10.png"
+    }
+
+]
